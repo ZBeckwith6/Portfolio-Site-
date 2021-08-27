@@ -79,7 +79,7 @@ export default function Footer() {
                 path: 'mailto:zbeckwith6@gmail.com',
               },
               {
-                title: 'Affton, Missouri 63123',
+                title: 'Saint Louis, Missouri 63123',
                 path: 'https://www.google.com/maps',
               },
             ]}
