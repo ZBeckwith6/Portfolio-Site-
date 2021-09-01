@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop';
 import NavMenu from './components/NavMenu';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -12,6 +13,7 @@ export default function App() {
     <>
       <Router>
         <NavMenu />
+        <ScrollToTop />
         <Switch>
           <Route path="/about">
             <About />

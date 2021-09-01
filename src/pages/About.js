@@ -44,10 +44,8 @@ const AboutPageStyles = styled.div`
       border: 2px solid var(--gray-1);
     }
   }
-  .about__info__items {
-    margin-top: 15rem;
-  }
   .about__info__item {
+    margin-top: 15rem;
     margin-bottom: 10rem;
   }
   .about__info__heading {
@@ -79,9 +77,7 @@ export default function About() {
         <div className="top-section">
           <div className="left">
             <p className="about__subheading">Hello, I am Zach Beckwith...</p>
-            <h2 className="about__heading">
-              A freelance Front-End Web Developer
-            </h2>
+            <h2 className="about__heading">A Front-End Web Developer</h2>
             <div className="about__info">
               <PText>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -123,7 +119,7 @@ export default function About() {
             <AboutInfoItem
               title="College"
               items={[
-                'Westminster College - Bachelors Degree in Business Administration',
+                'Westminster College | Bachelors Degree in Business Administration | 2010-2014',
               ]}
             />
             <AboutInfoItem
@@ -139,9 +135,18 @@ export default function About() {
             <h1 className="about__info__heading">My Skills</h1>
             <AboutInfoItem
               title="FrontEnd"
-              items={['HTML', 'CSS', 'JavaScript', 'React', 'React Native']}
+              items={[
+                'HTML |',
+                'CSS |',
+                'JavaScript |',
+                'React |',
+                'React Native',
+              ]}
             />
-            <AboutInfoItem title="Version Control" items={['GitHub']} />
+            <AboutInfoItem
+              title="Version Control"
+              items={['Git |', 'GitHub']}
+            />
           </div>
           <div className="about__info__item">
             <h1 className="about__info__heading">Experience</h1>
