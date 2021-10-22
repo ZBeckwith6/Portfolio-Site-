@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import PText from '../components/PText';
-import Button from '../components/Button';
 import AboutImg from '../assets/images/portrait1.jpg';
 import AboutInfoItem from '../components/AboutInfoItem';
 import ContactBanner from '../components/ContactBanner';
@@ -80,34 +79,26 @@ export default function About() {
             <h2 className="about__heading">A Front-End Web Developer</h2>
             <div className="about__info">
               <PText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Blandit turpis cursus in hac habitasse platea dictumst quisque
-                sagittis. Quis viverra nibh cras pulvinar mattis nunc sed
-                blandit libero. Mattis rhoncus urna neque viverra justo nec
-                ultrices dui. Non odio euismod lacinia at quis risus. Turpis
-                tincidunt id aliquet risus feugiat in ante metus dictum.
-                Fringilla phasellus faucibus scelerisque eleifend donec pretium.
-                Sit amet luctus venenatis lectus magna fringilla urna. Tempor
-                commodo ullamcorper a lacus.
+                In the Spring of 2020 I decided that I wanted to pursue a career
+                that was equally as rewarding as it was challenging, but most
+                importantly a career I was passionate about. My love for tech
+                and being a creator eventually led me to Web Development. The
+                idea of creating websites and solving problems for both myself
+                and for others immediately intrigued me and I knew this was my
+                calling. Since I've started building web applications, my end
+                goal is to make each site as responsive, user friendly and
+                appealing as possible. On top of using HTML, CSS and JS I enjoy
+                creating single page applications using React, which is what I
+                used to create this site, along with React Native.
                 <br />
                 <br />
-                Consequat nisl vel pretium lectus quam id leo in. Rhoncus mattis
-                rhoncus urna neque viverra. Varius quam quisque id diam vel quam
-                elementum pulvinar. Euismod nisi porta lorem mollis aliquam. Et
-                netus et malesuada fames ac turpis egestas sed tempus. Sit amet
-                tellus cras adipiscing enim eu turpis. Ultrices sagittis orci a
-                scelerisque purus semper eget duis at. Euismod in pellentesque
-                massa placerat. Rhoncus aenean vel elit scelerisque mauris.
-                Interdum consectetur libero id faucibus nisl tincidunt eget
-                nullam. Magna fermentum iaculis eu non diam. Sed cras ornare
-                arcu dui vivamus. Ac tortor dignissim convallis aenean.
-                Pellentesque pulvinar pellentesque habitant morbi tristique
-                senectus et netus. Adipiscing at in tellus integer feugiat
-                scelerisque varius.
+                Outside of Web Development I enjoy traveling, photography,
+                playing guitar, going to concerts and being way too emotionally
+                invested in my favorite sports teams. Go Cardinals, Blues and
+                Liverpool!. If you want to know more and would like to discuss
+                working together feel free to reach out!
               </PText>
             </div>
-            <Button btnText="Download Resume" btnLink="#" />
           </div>
           <div className="right">
             <img src={AboutImg} alt="Zach Beckwith Portrait" />
@@ -124,11 +115,15 @@ export default function About() {
             />
             <AboutInfoItem
               title="Online Learning"
-              items={['Udemy - The Web Developer Bootcamp by Colt Steele']}
+              items={[
+                'Udemy | The Web Developer Bootcamp by Colt Steele | Spring 2020 - Fall 2020',
+              ]}
             />
             <AboutInfoItem
               title="Bootcamp"
-              items={['NuCamp - Front End Web + Mobile Development Bootcamp']}
+              items={[
+                'NuCamp | Front End Web + Mobile Development Bootcamp | April 2021 - July 2021',
+              ]}
             />
           </div>
           <div className="about__info__item">
@@ -136,17 +131,16 @@ export default function About() {
             <AboutInfoItem
               title="FrontEnd"
               items={[
-                'HTML |',
-                'CSS |',
-                'JavaScript |',
-                'React |',
+                'HTML',
+                'CSS',
+                'JavaScript',
+                'React',
                 'React Native',
+                'Node.Js',
+                'Bootstrap',
               ]}
             />
-            <AboutInfoItem
-              title="Version Control"
-              items={['Git |', 'GitHub']}
-            />
+            <AboutInfoItem title="Version Control" items={['Git', 'GitHub']} />
           </div>
           <div className="about__info__item">
             <h1 className="about__info__heading">Experience</h1>

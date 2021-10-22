@@ -169,20 +169,20 @@ export default function HeroSection() {
               <ul>
                 <li>
                   <a
+                    href="https://github.com/ZBeckwith6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GH
+                  </a>
+                </li>
+                <li>
+                  <a
                     href="https://www.linkedin.com/in/zachary-beckwith-0152a541/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     LI
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.facebook.com/zach.beckwith.31/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    FB
                   </a>
                 </li>
                 <li>

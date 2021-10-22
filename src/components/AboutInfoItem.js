@@ -7,17 +7,16 @@ const AboutItemStyles = styled.div`
   align-items: center;
   justify-content: flex-start;
   margin-top: 3rem;
-  position: relative;
   .title {
     font-size: 2.4rem;
   }
   .items {
     display: flex;
     gap: 1.5rem;
-    position: absolute;
-    left: 18rem;
+    position: relative;
+    left: 15rem;
   }
-  .items {
+  .item {
     background-color: var(--deep-dark);
     padding: 1rem;
     border-radius: 8px;

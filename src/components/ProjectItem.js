@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import projectImg from '../assets/images/coding1.jpg';
 
@@ -29,6 +28,14 @@ const ProjectItemStyles = styled.div`
     font-family: 'RobotoMono Regular';
     margin-top: 1rem;
   }
+  .projectItem__link {
+    background-color: var(--gray-2);
+    border-radius: 12px;
+    padding: 2rem 0rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 2rem;
+  }
   @media only screen and (max-width: 768px) {
     .projectItem__img {
       height: 350px;
@@ -40,17 +47,24 @@ export default function ProjectItem({
   img = projectImg,
   title = 'Project Name',
   desc = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  href = 'http://willgrbcich.com/',
+  button = 'Website',
 }) {
   return (
     <ProjectItemStyles>
-      <Link to="/projects" className="projectItem__img">
+      <div className="projectItem__img">
         <img src={img} alt="project img" />
-      </Link>
+      </div>
       <div className="projectItem__info">
-        <Link to="#">
-          <h3 className="projectItem__title">{title}</h3>
-        </Link>
+        <h3 className="projectItem__title">{title}</h3>
         <p className="projectItem__desc">{desc}</p>
+        <ul className="projectItem__link">
+          <li>
+            <a href={href} target="_blank" rel="noreferrer noopener">
+              {button}
+            </a>
+          </li>
+        </ul>
       </div>
     </ProjectItemStyles>
   );

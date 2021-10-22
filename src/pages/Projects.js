@@ -67,10 +67,7 @@ export default function Projects() {
   return (
     <ProjectStyles>
       <div className="container">
-        <SectionTitle
-          heading="Projects"
-          subheading="Some of my recent works:"
-        />
+        <SectionTitle heading="Projects" subheading="Some of my recent work:" />
         <div className="projects__searchBar">
           <form>
             <input
@@ -89,6 +86,8 @@ export default function Projects() {
               title={item.name}
               desc={item.desc}
               img={item.img}
+              href={item.link}
+              button={item.button}
             />
           ))}
         </div>

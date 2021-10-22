@@ -49,15 +49,15 @@ export default function Footer() {
         <div className="footer__col1">
           <h1 className="footer__col1__title">Zach Beckwith</h1>
           <PText>
-            I am a freelance web developer from Saint Louis, Missouri. I create
+            I am a Front-End Web Developer from Saint Louis, Missouri. I create
             professional websites and applications. My journey as a developer
-            started about a year ago and I'm excited to continue learning by
+            started over a year ago and I'm excited to continue learning by
             working on new projects!
           </PText>
         </div>
         <div className="footer_col2">
           <FooterCol
-            heading="Important Links"
+            heading="Site Links"
             Links={[
               { title: 'Home', path: '/', type: 'Link' },
               { title: 'About', path: '/about', type: 'Link' },
@@ -71,7 +71,7 @@ export default function Footer() {
             heading="Contact Info"
             Links={[
               {
-                title: '+3143228154',
+                title: '+6363228154',
                 path: 'tel:+3143228154',
               },
               {
@@ -90,16 +90,16 @@ export default function Footer() {
             heading="Social Links"
             Links={[
               {
-                title: 'Facebook',
-                path: 'http://facebook.com',
+                title: 'Github',
+                path: 'https://github.com/ZBeckwith6',
+              },
+              {
+                title: 'Linkedin',
+                path: 'https://www.linkedin.com/in/zachary-beckwith-0152a541/',
               },
               {
                 title: 'Instagram',
-                path: 'http://instagram.com',
-              },
-              {
-                title: 'Github',
-                path: 'http://github.com',
+                path: 'https://www.instagram.com/zach.beckwith.photography/',
               },
             ]}
           />
