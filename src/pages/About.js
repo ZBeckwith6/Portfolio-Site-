@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PText from '../components/PText';
-import AboutImg from '../assets/images/portrait1.jpg';
+import AboutImg from '../assets/images/portrait2.jpg';
 import AboutInfoItem from '../components/AboutInfoItem';
 import ContactBanner from '../components/ContactBanner';
 
@@ -20,8 +20,9 @@ const AboutPageStyles = styled.div`
     flex: 2;
   }
   .about__subheading {
-    font-size: 2.2rem;
+    font-size: 3.9rem;
     margin-bottom: 2rem;
+    color: var(--white);
     span {
       background-color: var(--deep-dark);
       padding: 0.5rem;
@@ -29,7 +30,7 @@ const AboutPageStyles = styled.div`
     }
   }
   .about__heading {
-    font-size: 3.6rem;
+    font-size: 2.6rem;
     margin-bottom: 3rem;
   }
   .about__info {
@@ -43,13 +44,16 @@ const AboutPageStyles = styled.div`
       border: 2px solid var(--gray-1);
     }
   }
-  .about__info__item {
+  .about__info__items {
     margin-top: 15rem;
+  }
+  .about__info__item {
     margin-bottom: 10rem;
   }
   .about__info__heading {
     font-size: 3.6rem;
     text-transform: uppercase;
+    color: var(--white);
   }
   @media only screen and (max-width: 768px) {
     padding: 10rem 0;
@@ -129,18 +133,15 @@ export default function About() {
           <div className="about__info__item">
             <h1 className="about__info__heading">My Skills</h1>
             <AboutInfoItem
-              title="FrontEnd"
-              items={[
-                'HTML',
-                'CSS',
-                'JavaScript',
-                'React',
-                'React Native',
-                'Node.Js',
-                'Bootstrap',
-              ]}
+              title="Front-End"
+              items={['HTML | CSS | JavaScript | React']}
             />
-            <AboutInfoItem title="Version Control" items={['Git', 'GitHub']} />
+            <AboutInfoItem
+              title="Frameworks"
+              items={['React Native | Bootstrap']}
+            />
+            <AboutInfoItem title="Back-End" items={['NodeJS']} />
+            <AboutInfoItem title="Version Control" items={['Git | GitHub']} />
           </div>
           <div className="about__info__item">
             <h1 className="about__info__heading">Experience</h1>

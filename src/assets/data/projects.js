@@ -1,5 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
-import CodingImg from '../images/coding1.jpg';
+import CampBootstrap from '../images/campBootstrap.PNG';
+import CampReact from '../images/campReact.PNG';
 import GrbcichRealty from '../images/sign3crop.jpg';
 
 const projects = [
@@ -7,7 +8,7 @@ const projects = [
     id: uuidv4(),
     name: 'Grbcich Realty',
     desc:
-      'A Real Estate website for an up and coming Real Estate Agent in Saint Louis. Languages Used: HTML, CSS and JavaScript',
+      'A Real Estate website I created for an up and coming Real Estate Agent in Saint Louis. Languages Used: HTML, CSS and JavaScript',
     img: GrbcichRealty,
     link: 'http://willgrbcich.com/',
     button: 'Website',
@@ -17,7 +18,7 @@ const projects = [
     name: 'NuCampsite - React',
     desc:
       'A NuCamp class project website for a make believe campsite. Language Used: ReactJS.',
-    img: CodingImg,
+    img: CampReact,
     link: 'https://github.com/ZBeckwith6/nucampsite-react',
     button: 'Github Repository',
   },
@@ -26,7 +27,7 @@ const projects = [
     name: 'NuCampsite - Bootstrap',
     desc:
       'A NuCamp class project website for a make believe campsite. Languages Used: HTML, SCSS, JavaScript and Bootstrap.',
-    img: CodingImg,
+    img: CampBootstrap,
     link: 'https://github.com/ZBeckwith6/nuBootstrap',
     button: 'Github Repository',
   },

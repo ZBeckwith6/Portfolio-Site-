@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import HeroImg from '../assets/images/hero.jpg';
+import Portrait from '../assets/images/portrait.jpg';
 import Button from './Button';
-import PText from './PText';
 import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
 import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
 
@@ -45,35 +44,35 @@ const HeroStyles = styled.div`
   .hero__scrollDown {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     position: absolute;
-    bottom: 20px;
+    bottom: 30px;
     width: 50px;
   }
   .hero__social {
     left: 50px;
   }
   .hero__scrollDown {
-    right: 50px;
+    right: 25px;
   }
   .hero__social__indicator,
   .hero__scrollDown {
     width: 50px;
     p {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       transform: translateY(-70px) rotate(90deg);
       letter-spacing: normal.7rem;
       text-transform: uppercase;
     }
     img {
-      max-height: 45px;
+      max-height: 75px;
       width: 16px;
       margin: 0 auto;
       object-fit: contain;
     }
   }
   .hero__scrollDown {
-    max-height: 70px;
+    max-height: 90px;
   }
   .hero__social__text {
     ul {
@@ -82,10 +81,52 @@ const HeroStyles = styled.div`
       }
       a {
         display: inline-block;
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         transform: rotate(90deg);
         letter-spacing: 5px;
         margin-bottom: 2rem;
+      }
+    }
+  }
+  @media only screen and (max-width: 1199px) {
+    .hero__social__indicator,
+    .hero__scrollDown {
+      width: 50px;
+      p {
+        font-size: 2.2rem;
+        transform: translateY(-70px) rotate(90deg);
+        letter-spacing: normal.7rem;
+        text-transform: uppercase;
+      }
+      img {
+        max-height: 105px;
+        width: 16px;
+        margin: 0 auto;
+        object-fit: contain;
+      }
+    }
+    .hero__social {
+      left: 10px;
+      bottom: 2%;
+      width: 20px;
+      .hero__social__indicator {
+        width: 20px;
+        p {
+          font-size: 1.8rem;
+        }
+        img {
+          max-height: 52px;
+        }
+      }
+      .her__social__text {
+        ul {
+          li {
+            a {
+              font-size: 1.8rem;
+              margin-bottom: 1rem;
+            }
+          }
+        }
       }
     }
   }
@@ -108,12 +149,12 @@ const HeroStyles = styled.div`
     }
     .hero__social {
       left: 0px;
-      bottom: 15%;
+      bottom: 2%;
       width: 20px;
       .hero__social__indicator {
         width: 20px;
         p {
-          font-size: 1.2rem;
+          font-size: 1.6rem;
         }
         img {
           max-height: 22px;
@@ -123,7 +164,7 @@ const HeroStyles = styled.div`
         ul {
           li {
             a {
-              font-size: 1.2rem;
+              font-size: 1.6rem;
               margin-bottom: 1rem;
             }
           }
@@ -133,9 +174,10 @@ const HeroStyles = styled.div`
     .hero__scrollDown {
       right: 0;
       width: 20px;
+      bottom: 20%;
       gap: 1rem;
       P {
-        font-size: 1.3rem;
+        font-size: 1.6rem;
       }
     }
   }
@@ -151,13 +193,9 @@ export default function HeroSection() {
             <span className="hero__name">Zach Beckwith</span>
           </h1>
           <div className="hero__img">
-            <img src={HeroImg} alt="" />
+            <img src={Portrait} alt="" />
           </div>
           <div className="hero__info">
-            <PText>
-              I am a front-end web developer. I love designing and developing
-              new websites for people.
-            </PText>
             <Button btnLink="/projects" btnText="see my projects" />
           </div>
           <div className="hero__social">

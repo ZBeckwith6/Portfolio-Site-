@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { MdDesktopMac } from 'react-icons/md';
+import { MdDesktopMac, MdPhonelinkSetup, MdCode } from 'react-icons/md';
 import SectionTitle from './SectionTitle';
 import ServicesSectionItem from './ServicesSectionItem';
 
@@ -32,18 +32,21 @@ export default function ServiceSection() {
         <div className="services__allItems">
           <ServicesSectionItem
             icon={<MdDesktopMac />}
-            title="Website Design"
-            desc="Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod tempor incididunt ut labore et dolore magna aliqua"
-          />
-          <ServicesSectionItem
-            icon={<MdDesktopMac />}
             title="Web Development"
-            desc="Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod tempor incididunt ut labore et dolore magna aliqua"
+            desc="I create complete websites and applications for wide range of clients. If you have a vision for a site
+            or an application I'll help make that vision come to life!"
           />
           <ServicesSectionItem
-            icon={<MdDesktopMac />}
-            title="App Dev"
-            desc="Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod tempor incididunt ut labore et dolore magna aliqua"
+            icon={<MdPhonelinkSetup />}
+            title="Mobile Development"
+            desc="I develop mobile applications that are both visually appealing and can take advantage of the
+            advanced modern technology of mobile devices."
+          />
+          <ServicesSectionItem
+            icon={<MdCode />}
+            title="UI/UX Design"
+            desc="An exceptional user experience is essential for applications these days. It is my goal to create intuitive
+            application designs that people of all technological competencies can use with ease."
           />
         </div>
       </div>

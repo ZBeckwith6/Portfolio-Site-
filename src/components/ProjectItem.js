@@ -31,7 +31,7 @@ const ProjectItemStyles = styled.div`
   .projectItem__link {
     background-color: var(--gray-2);
     border-radius: 12px;
-    padding: 2rem 0rem;
+    padding: 1rem 0rem;
     margin-top: 1rem;
     text-align: center;
     font-size: 2rem;

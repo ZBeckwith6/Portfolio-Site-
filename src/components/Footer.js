@@ -4,7 +4,7 @@ import FooterCol from './FooterCol';
 import PText from './PText';
 
 const FooterStyles = styled.div`
-  padding-top: 10rem;
+  padding-top: 5rem;
   background-color: var(--deep-dark);
   .container {
     display: flex;
@@ -23,7 +23,7 @@ const FooterStyles = styled.div`
     margin-bottom: 1rem;
   }
   .createdBy {
-    background-color: var(--dark-bg);
+    background-color: var(--deep-dark);
     text-align: center;
     padding: 1rem 0;
     margin-top: 2rem;

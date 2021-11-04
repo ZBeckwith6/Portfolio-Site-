@@ -1,13 +1,14 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import styled from 'styled-components';
+import emailjs from 'emailjs-com';
 
-const FormStyles = styled.form`
+const FormStyle = styled.form`
   width: 100%;
   .form-group {
     width: 100%;
     margin-bottom: 2rem;
   }
-  abel {
+  label {
     font-size: 1.8rem;
   }
   input,
@@ -43,17 +44,36 @@ export default function ContactForm() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
 
+    emailjs
+      .sendForm(
+        'Gmail',
+        'template_7sp19aj',
+        form.current,
+        'user_eo4qypckg62EorLGKH7ob'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
-    <div>
-      <FormStyles>
+    <>
+      <FormStyle ref={form} onSubmit={sendEmail}>
         <div className="form-group">
           <label htmlFor="name">
-            Your Name{' '}
+            Your Name
             <input
               type="text"
-              id="name"
-              name="name"
+              id="user_name"
+              name="user_name"
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
@@ -61,11 +81,11 @@ export default function ContactForm() {
         </div>
         <div className="form-group">
           <label htmlFor="email">
-            Your Email{' '}
+            Your Email
             <input
-              type="text"
-              id="email"
-              name="email"
+              type="email"
+              id="user_email"
+              name="user_email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -73,8 +93,8 @@ export default function ContactForm() {
         </div>
         <div className="form-group">
           <label htmlFor="message">
-            Your Message{' '}
-            <input
+            Your message
+            <textarea
               type="text"
               id="message"
               name="message"
@@ -83,8 +103,10 @@ export default function ContactForm() {
             />
           </label>
         </div>
-        <button type="submit">Send</button>
-      </FormStyles>
-    </div>
+        <button type="submit" value="send">
+          Send
+        </button>
+      </FormStyle>
+    </>
   );
 }
