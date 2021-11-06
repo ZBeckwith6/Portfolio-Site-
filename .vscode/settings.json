@@ -15,5 +15,5 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": true
   },
-  "cSpell.words": ["noopener", "noreferrer", "Roboto"]
+  "cSpell.words": ["noopener", "noreferrer", "Roboto", "Swiper"]
 }
