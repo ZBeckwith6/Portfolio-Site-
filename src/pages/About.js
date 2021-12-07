@@ -140,6 +140,7 @@ export default function About() {
               title="Frameworks"
               items={['React Native | Bootstrap']}
             />
+            <AboutInfoItem title="CMS Platforms" items={['WordPress']} />
             <AboutInfoItem title="Back-End" items={['NodeJS']} />
             <AboutInfoItem title="Version Control" items={['Git | GitHub']} />
           </div>

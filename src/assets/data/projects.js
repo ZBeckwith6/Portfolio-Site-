@@ -2,6 +2,7 @@ import { v4 as uuidv4 } from 'uuid';
 import CampBootstrap from '../images/campBootstrap.PNG';
 import CampReact from '../images/campReact.PNG';
 import GrbcichRealty from '../images/sign3crop.jpg';
+import PhotographySite from '../images/photographyPortfolio.PNG';
 
 const projects = [
   {
@@ -11,6 +12,15 @@ const projects = [
       'A Real Estate website I created for an up and coming Real Estate Agent in Saint Louis. Languages Used: HTML, CSS and JavaScript',
     img: GrbcichRealty,
     link: 'http://willgrbcich.com/',
+    button: 'Website',
+  },
+  {
+    id: uuidv4(),
+    name: 'Zach Beckwith Photography',
+    desc:
+      'A website I created for my freelance photography work using Wordpress/Elementor.',
+    img: PhotographySite,
+    link: 'http://zachbeckwithphotography.com/',
     button: 'Website',
   },
   {
